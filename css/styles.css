@@ -54,8 +54,9 @@ footer {
 }
 
 .text-image-row {
-  display: flex;
-  align-items: flex-start;
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* two equal columns */
   gap: 2rem;
 }
 
@@ -63,28 +64,15 @@ footer {
   flex: 1;
 }
 
-.image-content {
-  flex: 1;
+.gallery {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* two equal columns */
+  grid-template-columns: repeat(2, 1fr); /* 2 per row */
   gap: 1rem;
 }
 
-.image-content img {
-  width: 100%; /* fill each grid cell */
+.gallery img {
+  width: 100%;
   height: auto;
-  display: block;
-}
-
-/* Stack vertically on smaller screens */
-@media (max-width: 768px) {
-  .text-image-row {
-    flex-direction: column;
-  }
-  
-  .image-content {
-    order: -1; /* Puts image above text on mobile, remove if you prefer text first */
-  }
 }
 
 .file-link {
