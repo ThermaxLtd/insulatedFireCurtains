@@ -6,6 +6,9 @@ body {
 }
 
 .my-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
   background: linear-gradient(
     to right,
     var(--my-red)        0%,
@@ -26,6 +29,9 @@ body {
 }
 
 nav {
+  position: sticky;
+  top: 79px; /* height of header */
+  z-index: 99;
   background: linear-gradient(
     to right,
     var(--my-red)        0%,

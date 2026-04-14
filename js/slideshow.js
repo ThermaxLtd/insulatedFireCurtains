@@ -5,4 +5,4 @@ setInterval(() => {
   slides[current].classList.remove('active');
   current = (current + 1) % slides.length;
   slides[current].classList.add('active');
-}, 3000); // changes every 3 seconds, adjust to taste
+}, 8000); // changes every 8 seconds, adjust to taste
