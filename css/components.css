@@ -131,6 +131,28 @@ nav button:hover::before, nav a:hover::before {
   padding: 1rem;       /* adjust to taste */
 }
 
+.section-list ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.section-list ul li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.section-list ul li::before {
+  content: "";
+  display: inline-block;
+  width: 16px;  /* adjust to match your svg size */
+  height: 16px;
+  background-image: url("../images/HFS-Pijltje-rechts-rood.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  flex-shrink: 0; /* stops it squishing */
+}
+
 @media (max-width: 768px) {
   .text-image-row {
     grid-template-columns: 1fr;
