@@ -89,10 +89,7 @@ footer {
   gap: 20px;
 }
 
-br {
-  display: block;
-  margin-bottom: 100px; /* now works */
-}
+
 
 @media (max-width: 768px) {
   .my-header {
